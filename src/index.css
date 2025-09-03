@@ -6,7 +6,6 @@
 *
 {
     box-sizing: border-box;
-    overflow: hidden;
 }
 
 html, body, #root
@@ -21,4 +20,5 @@ html, body, #root
     width: 100%;
     font-family: 'Roboto', sans-serif;
     background-color:rgb(206, 230, 228);
+    overflow: hidden;
 }
