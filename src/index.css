@@ -22,3 +22,16 @@ html, body, #root
     background-color:rgb(206, 230, 228);
     overflow: hidden;
 }
+
+.tasks::-webkit-scrollbar
+{
+    width: 3px;
+    background-color: #9abfcf;
+    border-radius:10px;
+}
+
+.tasks::-webkit-scrollbar-thumb
+{
+    background-color: #95d0e4;
+    border-radius:10px;
+}
