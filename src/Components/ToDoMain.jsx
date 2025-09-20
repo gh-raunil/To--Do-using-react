@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { IconCircleCheck, IconXboxX, IconBackspace } from "@tabler/icons-react";
+import { IconCircleCheck, IconXboxX, IconTrash  } from "@tabler/icons-react";
 
 const ToDoMain = ({ onOpen }) => {
   const [task, setTask] = useState("");
@@ -59,7 +59,7 @@ const ToDoMain = ({ onOpen }) => {
               {tasks.map((t, index) => (
                 <li
                   key={index}
-                  className="py-1 w-[95%] bg-white/30 backdrop-blur-md flex items-start justify-between rounded-lg mt-2 px-3"
+                  className="py-1 w-[95%] bg-white/30 backdrop-blur-md flex items-center justify-between rounded-lg mt-2 px-3"
                 >
                   {/* Task text */}
                   <span
@@ -82,7 +82,7 @@ const ToDoMain = ({ onOpen }) => {
                             )
                           )
                         }
-                        className="ml-2 text-[#E5F4E1]"
+                        className="ml-2 text-[#d15bec]"
                       >
                         <IconXboxX stroke={2} />
                       </button>
@@ -95,7 +95,7 @@ const ToDoMain = ({ onOpen }) => {
                             )
                           )
                         }
-                        className="ml-2 text-[#4188A7]"
+                        className="ml-2 text-[#00a0e5]"
                       >
                         <IconCircleCheck stroke={2} />
                       </button>
@@ -108,9 +108,9 @@ const ToDoMain = ({ onOpen }) => {
                       onClick={() =>
                         setTasks(tasks.filter((_, i) => i !== index))
                       }
-                      className="ml-2 text-[#5BA4EC]"
+                      className="ml-2 text-[#ec5b5b]"
                     >
-                      <IconBackspace stroke={2} />
+                      <IconTrash stroke={2} /> 
                     </button>
                   </div>
                 </li>

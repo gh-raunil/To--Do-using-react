@@ -19,8 +19,8 @@ const ToDoStart = ({onClose}) => {
             <p className=''></p>
           </div>
           <div className='text-xl md:text-2xl border mt-10 md:mt-20 w-30 py-0 md:w-35 rounded flex justify-center'>
-            <button onClick={onClose} className='flex justify-evenly items-center w-full h-full text-4xl cursor-pointer'>Start
-              <IconArrowNarrowRight className='inline-block ml-2' />
+            <button onClick={onClose} className='flex justify-evenly items-center w-full h-full text-4xl cursor-pointer py-1'>Start
+              <IconArrowNarrowRight className='inline-block' />
             </button>
           </div>
         </div>
